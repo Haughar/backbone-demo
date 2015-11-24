@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>Backbone Tutorial </title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Backbone Tutorial </h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name </th>
+                    <th>Description</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="form-control first-input">
+                    </td>
+                    <td>
+                        <input class="form-control last-input">
+                    </td>
+                    <td>
+                        <input class="form-control description-input">
+                    </td>
+                    <td>
+                        <button class="btn btn-primary add-blog">Add</button>
+                    </td>
+                </tr>
+            </thead>
+            <tbody class="blogs-list"></tbody>
+        </table>
+    </div>
+    <script type="text/template" class="blogs-list-template">
+        <td><span class="first"><%= first %></span></td>
+        <td><span class="last"><%= last %></span></td>
+        <td><span class="description"><%= description %></span></td>
+    </script>
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js" type="text/javascript" language="JavaScript"></script>
+    <script src="http://underscorejs.org/underscore-min.js" type="text/javascript" language="JavaScript"></script>
+    <script src="http://backbonejs.org/backbone-min.js" type="text/javascript" language="JavaScript"></script>
+    <script src="backbone-mvc.js" type="text/javascript" language="JavaScript"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
